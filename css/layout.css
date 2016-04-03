@@ -328,7 +328,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .c {
-    width: 80%;
+    width: 70%;
     -moz-animation: c 2s ease;
     -webkit-animation: c 2s ease;
 }
@@ -353,7 +353,7 @@ ul#nav li.current a { color: #F06000; }
     -webkit-animation: bash 2s ease;
 }
 .perl {
-    width: 80%;
+    width: 60%;
     -moz-animation: perl 2s ease;
     -webkit-animation: perl 2s ease;
 }
@@ -373,12 +373,12 @@ ul#nav li.current a { color: #F06000; }
     -webkit-animation: prolog 2s ease;
 }
 .javascript {
-    width: 80%;
+    width: 65%;
     -moz-animation: javascript 2s ease;
     -webkit-animation: javascript 2s ease;
 }
 .php {
-    width: 70%;
+    width: 50%;
     -moz-animation: php 2s ease;
     -webkit-animation: php 2s ease;
 }
