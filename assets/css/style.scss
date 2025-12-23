@@ -3,20 +3,24 @@
 
 @import "{{ site.theme }}";
 
-/* Make content wider on desktop */
+/* Make content wider and centered on desktop */
 main {
-  max-width: 80ch !important;
+  max-width: 100ch !important;
+  margin: 0 auto !important;
+  width: 90% !important;
 }
 
-/* Responsive width */
-@media (min-width: 768px) {
+/* Even wider on large screens */
+@media (min-width: 1200px) {
   main {
-    max-width: 90ch !important;
+    max-width: 140ch !important;
+    width: 85% !important;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   main {
-    max-width: 120ch !important;
+    max-width: 160ch !important;
+    width: 80% !important;
   }
 }
