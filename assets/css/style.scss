@@ -1,26 +1,24 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
-/* Make content wider and centered on desktop */
+/* Custom styles for wider content on desktop */
 main {
-  max-width: 100ch !important;
-  margin: 0 auto !important;
-  width: 90% !important;
+  max-width: 100ch;
+  margin: 0 auto;
+  width: 90%;
 }
 
 /* Even wider on large screens */
 @media (min-width: 1200px) {
   main {
-    max-width: 140ch !important;
-    width: 85% !important;
+    max-width: 140ch;
+    width: 85%;
   }
 }
 
 @media (min-width: 1600px) {
   main {
-    max-width: 160ch !important;
-    width: 80% !important;
+    max-width: 160ch;
+    width: 80%;
   }
 }
