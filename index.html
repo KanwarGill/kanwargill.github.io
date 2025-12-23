@@ -241,6 +241,33 @@
     </div>
 
     <script>
+        // Easter Egg: Time-based themes
+        function checkTimeBasedTheme() {
+            const now = new Date();
+            const hour = now.getHours();
+            const minute = now.getMinutes();
+
+            // Leet time easter egg (1:37 AM or PM)
+            if ((hour === 1 || hour === 13) && minute === 37) {
+                document.body.classList.add('leet-mode');
+                console.log('%c1337 MODE ACTIVATED', 'color: #00ff00; font-size: 20px; font-weight: bold;');
+            } else {
+                document.body.classList.remove('leet-mode');
+            }
+
+            // Late night hacker mode (11 PM - 5 AM)
+            if (hour >= 23 || hour < 5) {
+                document.body.classList.add('night-mode');
+                console.log('%cLATE NIGHT HACKER MODE', 'color: #00ff00; font-size: 16px; font-weight: bold;');
+            } else {
+                document.body.classList.remove('night-mode');
+            }
+        }
+
+        // Check on load and every minute
+        checkTimeBasedTheme();
+        setInterval(checkTimeBasedTheme, 60000);
+
         // Hamburger menu toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');

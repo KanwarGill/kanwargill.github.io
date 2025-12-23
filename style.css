@@ -704,3 +704,88 @@ body {
         line-height: 40px;
     }
 }
+
+/* Easter Egg: Time-based themes */
+
+/* Late Night Hacker Mode (11 PM - 5 AM) */
+body.night-mode {
+    --cyan: #00ff00;
+    --purple: #00ff00;
+    --green: #00ff41;
+    --yellow: #39ff14;
+    --pink: #00ff00;
+    --orange: #00ff00;
+    --bg-dark: #000000;
+    --bg-darker: #001a00;
+    --glow-cyan: 0 0 20px #00ff00;
+    --glow-purple: 0 0 20px #00ff00;
+}
+
+body.night-mode .scanlines {
+    opacity: 0.8;
+    background: linear-gradient(
+        transparent 50%,
+        rgba(0, 255, 0, 0.05) 50%
+    );
+}
+
+body.night-mode .glitch {
+    color: #00ff00;
+    text-shadow:
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 30px #00ff00,
+        0 0 40px #00ff00;
+    animation: glitch 2s infinite, matrix-flicker 0.5s infinite;
+}
+
+@keyframes matrix-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.95; }
+}
+
+body.night-mode .terminal-nav {
+    border-color: #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+body.night-mode .section {
+    border-color: #00ff00;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+}
+
+/* Leet Mode (1:37 AM/PM) */
+body.leet-mode {
+    animation: rainbow-bg 5s infinite;
+}
+
+body.leet-mode .glitch::after {
+    content: ' [1337]';
+    font-size: 0.5em;
+    color: #ff00ff;
+    animation: blink 0.5s infinite;
+}
+
+body.leet-mode * {
+    animation: rainbow-text 3s infinite !important;
+}
+
+@keyframes rainbow-bg {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes rainbow-text {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+body.leet-mode .scanlines {
+    opacity: 1;
+    animation: scanline-move 2s linear infinite;
+}
+
+@keyframes scanline-move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+}
