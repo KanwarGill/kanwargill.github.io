@@ -3,6 +3,9 @@ description: Engineering (SWE) | Teaching (OCT)
 baseurl: ""
 url: "https://www.kanwargill.ca"
 
+# Favicon
+favicon: /img/favicon-16x16.png
+
 # Theme settings
 remote_theme: b2a3e8/jekyll-theme-console
 plugins:

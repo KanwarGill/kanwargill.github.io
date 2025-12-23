@@ -1,0 +1,18 @@
+/* Force full-width layout */
+.container {
+  max-width: none !important;
+  width: 95% !important;
+  margin: 0 auto !important;
+}
+
+main {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Slightly narrower on very large screens */
+@media (min-width: 1600px) {
+  .container {
+    width: 90% !important;
+  }
+}
