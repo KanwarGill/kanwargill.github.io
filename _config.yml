@@ -13,7 +13,7 @@ plugins:
   - jekyll-remote-theme
 
 # Style: dark, light, hacker, nord
-style: hacker
+style: nord
 
 # Header pages
 header_pages:
