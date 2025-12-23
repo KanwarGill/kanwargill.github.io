@@ -67,14 +67,20 @@ body {
     margin-bottom: 40px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
     box-shadow: var(--glow-cyan);
 }
 
 .nav-prompt {
     color: var(--green);
     font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -89,6 +95,38 @@ body {
     background: var(--cyan);
     color: var(--bg-dark);
     box-shadow: var(--glow-cyan);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--cyan);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /* Hero Section */
@@ -413,12 +451,44 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .glitch {
-        font-size: 2rem;
+    /* Mobile Navigation */
+    .hamburger {
+        display: flex;
     }
 
-    .ascii-art {
-        font-size: 8px;
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-darker);
+        border: 1px solid var(--cyan);
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 15px;
+        gap: 15px;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .glitch {
+        font-size: 2rem;
     }
 
     .section {
@@ -438,10 +508,6 @@ body {
 
     .links-grid {
         grid-template-columns: 1fr;
-    }
-
-    .nav-link {
-        font-size: 12px;
     }
 }
 
