@@ -33,6 +33,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 /* Scanline effect */
@@ -68,8 +69,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     box-shadow: var(--glow-cyan);
+    backdrop-filter: blur(10px);
+    background: rgba(5, 8, 16, 0.95);
 }
 
 .nav-prompt {
@@ -447,6 +452,45 @@ body {
 
 .footer-output {
     font-size: 0.9rem;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--cyan);
+    color: var(--bg-dark);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px var(--cyan);
+    z-index: 998;
+}
+
+.scroll-to-top:hover {
+    background: var(--purple);
+    box-shadow: 0 0 30px var(--purple);
+    transform: translateY(0) scale(1.1);
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top span {
+    display: block;
+    line-height: 50px;
 }
 
 /* Responsive */
