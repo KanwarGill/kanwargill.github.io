@@ -1,24 +1,24 @@
 ---
 ---
 
-/* Custom styles for wider content on desktop */
-main {
-  max-width: 100ch;
-  margin: 0 auto;
-  width: 90%;
+/* Force wider content on all screens */
+main,
+.container,
+article {
+  max-width: none !important;
+  width: 95% !important;
+  margin: 0 auto !important;
+  padding-left: 2.5% !important;
+  padding-right: 2.5% !important;
 }
 
-/* Even wider on large screens */
-@media (min-width: 1200px) {
-  main {
-    max-width: 140ch;
-    width: 85%;
-  }
-}
-
+/* Slightly narrower on very large screens for readability */
 @media (min-width: 1600px) {
-  main {
-    max-width: 160ch;
-    width: 80%;
+  main,
+  .container,
+  article {
+    width: 90% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
   }
 }
