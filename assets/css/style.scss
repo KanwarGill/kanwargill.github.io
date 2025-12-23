@@ -1,0 +1,22 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Make content wider on desktop */
+main {
+  max-width: 80ch !important;
+}
+
+/* Responsive width */
+@media (min-width: 768px) {
+  main {
+    max-width: 90ch !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 120ch !important;
+  }
+}
