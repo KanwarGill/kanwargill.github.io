@@ -7,7 +7,9 @@ title: About
 
 ## $ history | tail -n 10
 
-With over **eight years** of experience in software engineering, I'm a highly skilled and versatile Full-Stack Developer with a strong focus on e-commerce and banking domains.
+With over **eight years** of experience in software engineering,
+I'm a highly skilled Full-Stack Developer focused on e-commerce
+and banking domains.
 
 ### Current: Instacart (July 2024 - Present)
 **Software Engineer - Catalog Team**
@@ -48,12 +50,25 @@ $ cat achievements.txt
 
 ```json
 {
-  "languages": ["TypeScript", "JavaScript", "Python", "Java", "PHP"],
-  "frontend": ["Vue.js", "React", "Node.js"],
-  "backend": ["Microservices", "Serverless", "AWS Lambda"],
-  "infrastructure": ["Docker", "Kubernetes", "AWS", "Jenkins"],
-  "databases": ["MongoDB", "PostgreSQL", "MySQL", "DynamoDB", "Redis"],
-  "tools": ["Git", "JIRA", "Datadog", "LaunchDarkly"]
+  "languages": [
+    "TypeScript", "JavaScript",
+    "Python", "Java", "PHP"
+  ],
+  "frontend": [
+    "Vue.js", "React", "Node.js"
+  ],
+  "backend": [
+    "Microservices", "Serverless",
+    "AWS Lambda"
+  ],
+  "infrastructure": [
+    "Docker", "Kubernetes",
+    "AWS", "Jenkins"
+  ],
+  "databases": [
+    "MongoDB", "PostgreSQL",
+    "MySQL", "DynamoDB", "Redis"
+  ]
 }
 ```
 
@@ -87,8 +102,9 @@ $ cat achievements.txt
 
 ## $ fortune
 
-> "I consistently deliver high-quality, maintainable solutions while driving innovation and excellence."
+> "I consistently deliver high-quality, maintainable
+> solutions while driving innovation and excellence."
 
 ---
 
-[← Back](/) | [Download Resume](/assets/KANWAR_GILL_RESUME.pdf)
+[← Back](/) | [Resume](/assets/KANWAR_GILL_RESUME.pdf)

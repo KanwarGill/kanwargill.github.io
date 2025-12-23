@@ -3,20 +3,6 @@ layout: home
 title: Home
 ---
 
-```
- _  __
-| |/ /__ _ _ ____      ____ _ _ __
-| ' // _` | '_ \ \ /\ / / _` | '__|
-| . \ (_| | | | \ V  V / (_| | |
-|_|\_\__,_|_| |_|\_/\_/ \__,_|_|
-
-  ____ _ _ _
- / ___(_) | |
-| |  _| | | |
-| |_| | | | |
- \____|_|_|_|
-```
-
 # Kanwar Gill
 
 **Engineering (SWE) | Teaching (OCT)**
@@ -30,9 +16,9 @@ Full-Stack Software Engineer with 8+ years of experience specializing in e-comme
 **Tech Stack:**
 - **Languages:** TypeScript, JavaScript, Python, Java, PHP
 - **Frontend:** Vue.js, React, Node.js
-- **Backend:** Microservices, Serverless (AWS Lambda, Step Functions)
-- **Infrastructure:** Docker, Kubernetes, AWS (SAM, CloudWatch, SNS/SQS)
-- **Databases:** MongoDB, PostgreSQL, MySQL, DynamoDB, Redis
+- **Backend:** Microservices, Serverless, AWS Lambda
+- **Infrastructure:** Docker, Kubernetes, AWS
+- **Databases:** MongoDB, PostgreSQL, MySQL, DynamoDB
 
 ---
 

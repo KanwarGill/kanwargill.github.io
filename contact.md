@@ -5,14 +5,6 @@ title: Contact
 
 # Contact
 
-```
- ____            _             _
-/ ___|___  _ __ | |_ __ _  ___| |_
-| |   / _ \| '_ \| __/ _` |/ __| __|
-| |__| (_) | | | | || (_| | (__| |_
-\____\___/|_| |_|\__\__,_|\___|\__|
-```
-
 ---
 
 ## $ cat contact_info.txt
@@ -27,13 +19,6 @@ WEBSITE:   https://www.kanwargill.ca
 ---
 
 ## $ ls -la social_links/
-
-```bash
-drwxr-xr-x  4 kanwar  staff  128 Dec 23 2025 .
--rw-r--r--  1 kanwar  staff   42 Dec 23 2025 github.txt
--rw-r--r--  1 kanwar  staff   48 Dec 23 2025 linkedin.txt
--rw-r--r--  1 kanwar  staff   54 Dec 23 2025 stackoverflow.txt
-```
 
 ### Connect with me:
 
