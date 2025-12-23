@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <style>
+    /* Override theme's 600px max-width */
+    .container {
+      max-width: none !important;
+      width: 95% !important;
+    }
+
+    @media (min-width: 1600px) {
+      .container {
+        width: 90% !important;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      {%- include header.html -%}
+      <main>
+        {{ content }}
+      </main>
+      {%- include footer.html -%}
+    </div>
+  </body>
+</html>
