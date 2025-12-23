@@ -496,13 +496,19 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     /* Mobile Navigation */
+    .terminal-nav {
+        padding: 12px 20px;
+        position: sticky;
+        top: 0;
+    }
+
     .hamburger {
         display: flex;
     }
 
     .nav-links {
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: calc(var(--nav-height, 60px));
         left: 0;
         right: 0;
         background: var(--bg-darker);
@@ -510,39 +516,71 @@ body {
         border-top: none;
         border-radius: 0 0 8px 8px;
         flex-direction: column;
-        padding: 20px;
-        margin-top: 15px;
-        gap: 15px;
+        padding: 0;
+        gap: 0;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
         transition: all 0.3s ease;
+        box-shadow: var(--glow-cyan);
+        z-index: 998;
     }
 
     .nav-links.active {
-        max-height: 300px;
+        max-height: 400px;
         opacity: 1;
+        padding: 15px;
     }
 
     .nav-link {
         width: 100%;
         text-align: center;
-        padding: 10px;
-        font-size: 14px;
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 8px;
     }
 
+    .nav-link:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Mobile Typography */
     .glitch {
         font-size: 2rem;
     }
 
-    .section {
-        padding: 20px;
+    .subtitle {
+        font-size: 1rem;
     }
 
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    /* Mobile Sections */
+    .section {
+        padding: 20px 15px;
+        margin: 40px 0;
+    }
+
+    .content-box {
+        padding: 15px;
+    }
+
+    /* Mobile Tech Stack */
     .tech-label {
         width: 100%;
         display: block;
         margin-bottom: 5px;
+    }
+
+    .tech-item {
+        padding: 12px;
+    }
+
+    /* Mobile Experience */
+    .experience-item {
+        padding: 20px;
     }
 
     .job-header {
@@ -550,21 +588,119 @@ body {
         align-items: flex-start;
     }
 
+    .company {
+        font-size: 1.2rem;
+    }
+
+    .job-title {
+        font-size: 1rem;
+    }
+
+    /* Mobile Contact */
+    .contact-label {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+
     .links-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Mobile Scroll Button */
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .scroll-to-top span {
+        line-height: 45px;
+    }
+
+    /* Mobile Container */
+    .container {
+        padding: 15px;
+    }
+
+    /* Mobile Terminal Line */
+    .terminal-line {
+        padding: 15px;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    .ascii-art {
-        font-size: 6px;
+    .container {
+        padding: 10px;
+    }
+
+    .terminal-nav {
+        padding: 10px 15px;
     }
 
     .glitch {
         font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .section {
+        padding: 15px 10px;
+        margin: 30px 0;
+    }
+
+    .content-box {
+        padding: 12px;
+    }
+
+    .tech-item {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .experience-item {
+        padding: 15px;
+    }
+
+    .company {
+        font-size: 1.1rem;
+    }
+
+    .job-title {
+        font-size: 0.95rem;
+    }
+
+    .job-details li {
+        font-size: 0.9rem;
+    }
+
+    .terminal-line {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    .scroll-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .scroll-to-top span {
+        line-height: 40px;
     }
 }

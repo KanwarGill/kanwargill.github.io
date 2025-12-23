@@ -218,6 +218,16 @@
         // Hamburger menu toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
+        const nav = document.querySelector('.terminal-nav');
+
+        // Set nav height for mobile menu positioning
+        function updateNavHeight() {
+            const navHeight = nav.offsetHeight;
+            document.documentElement.style.setProperty('--nav-height', `${navHeight}px`);
+        }
+
+        updateNavHeight();
+        window.addEventListener('resize', updateNavHeight);
 
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
@@ -230,6 +240,14 @@
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
             });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && navLinks.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
         });
 
         // Smooth scrolling for anchor links
